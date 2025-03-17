@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Vista Alegre</title>
+
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body, html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+    
+    .sky {
+        background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    @keyframes clouds {
+        0% { background-position: 0% 0%; }
+        100% { background-position: 100% 0%; }
+    }
+    
+    .clouds {
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        width: 120%;
+        height: 20%;
+        background: url('https://i.imgur.com/8cQ0g5D.png') repeat-x;
+        animation: clouds 30s linear infinite;
+    }
+    
+    .login-box {
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+    .login-box h2 {
+        margin: 0 0 20px;
+        text-align: center;
+    }
+    
+    .textbox {
+        margin-bottom: 20px;
+    }
+    
+    .textbox input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 10px;
+        background: #007BFF;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div class="sky">
+        <div class="login-box">
+            
+<img src="vistaalegre.jpg.jpg" alt="fotovista alegre" height="220">
+
+            <form>
+                <div class="textbox">
+                    <input type="text" placeholder="Usuário" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Senha" required>
+                </div>
+                <button class="btn" type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
